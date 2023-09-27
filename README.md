@@ -1,4 +1,4 @@
-# Token Generator and Validator Web Application
+# Token Generator and Validator App
 
 Description
 
