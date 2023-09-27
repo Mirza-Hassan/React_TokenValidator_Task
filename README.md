@@ -20,64 +20,49 @@ Build a web app that generates and validates tokens with a format of XXXX-XXXX-X
   
 # Folder Structure
 
-![FS](https://github.com/Mirza-Hassan/React_UserTable_Task/assets/17096257/88e2082f-d218-48d7-bac6-c5a538be5612)
+![fs](https://github.com/Mirza-Hassan/React_TokenValidator_Task/assets/17096257/96525169-9d3e-4415-aedd-dabffbfd7919)
 
-# Installation
+# Setup Instructions
 
-## Frontend
-1. Navigate to the `frontend` directory using your terminal.
+1. Clone the repository
+- Run `git clone https://github.com/Mirza-Hassan/React_TokenValidator_Task.git` 
 
-2. Run the following command to install the required dependencies:
-```
-npm install
-```
+2. Running the app
 
-3. Once the installation is complete, start the development server with:
-```
-npm start
-```
+- Run `docker-compose up`
 
-## Backend
-1. Open your terminal and navigate to the `backend` directory.
+### Manual Installation
+1. Navigate to the `frontend` directory and install dependencies: `npm install`
 
-2. Build the backend project using the following command:
-```
-npm install
-```
+2. Start the development server: ` npm start`
 
-3. After a successful build, launch the backend application with:
-```
-node app.js
-```
+3. In the `backend` directory, install dependencies: `npm install`
+
+4. Launch the backend application: `node server.js`
+
 # API Documentation
 
-This documentation outlines APIs:
+## Token API
 
-- **Users API**
-    - **Fetch User Information:**
-        - **URL**: `https://private-e7f67d-users324.apiary-mock.com/users`
-        - **Method**: GET
-        - **Parameters**: 
-            - `id` (integer): The unique identifier for the user.
-            - `name` (string): The full name of the user.
-            - `email` (string): The email address associated with the user.
-            - `birthdate` (string): The date of birth of the user in the format YYYY-MM-DD.
-            - `age` (integer): The age of the user.
-        - **Response**: User details.            
-            ```json
-            {
-                "id": 1,
-                "name": "John Doe",
-                "email": "johndoe@example.com",
-                "birthdate": "1990-05-15",
-                "age": 31
-            }
+### Generate Token
 
+- **URL:** `http://localhost:8081/generate-token`
+- **Method:** GET
+- **Parameters:**
+  - `availableDigits` (integer): Customizable available digits for token generation.
+- **Response:** Generates a token.
 
+### Validate Token
+
+- **URL:** `http://localhost:8081/validate-token`
+- **Method:** POST
+- **Parameters:**
+  - `token` (string): The token to be validated.
+- **Response:** Validates the provided token.
 
 # Screenshot:
+![ss](https://github.com/Mirza-Hassan/React_TokenValidator_Task/assets/17096257/4ad49db7-e20b-4d09-b889-de03bea5aa90)
 
 # APP FLOW
-[screencast-localhost_3000-2023.08.09-08_49_17.webm](https://github.com/Mirza-Hassan/vending_machine/assets/17096257/6f943db9-b07f-4220-b1ec-87aeca634e52)
 
 
