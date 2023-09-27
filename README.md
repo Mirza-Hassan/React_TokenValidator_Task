@@ -64,5 +64,6 @@ Build a web app that generates and validates tokens with a format of XXXX-XXXX-X
 ![ss](https://github.com/Mirza-Hassan/React_TokenValidator_Task/assets/17096257/4ad49db7-e20b-4d09-b889-de03bea5aa90)
 
 # APP FLOW
+[demo.webm](https://github.com/Mirza-Hassan/React_TokenValidator_Task/assets/17096257/9d266e41-4209-4871-9e9a-165c1d04fb8c)
 
 
